@@ -3,8 +3,8 @@
   margin: 0;
 }
 
-body {
-  overflow-x: hidden;
+html,body {
+  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -163,12 +163,18 @@ button {
     align-content: center;
   }
 
+  .header {
+    position: relative;
+  }
+
   .header .navbar {
     width: 100%;
     height: 100vh;
     background: #000000;
     top: 0;
-    left: 100%;
+    /* change 100% */
+    left: 100vw;
+    
     position: absolute;
 
     display: flex;
@@ -208,9 +214,6 @@ button {
 
   .active .header-content .menu-btn .close {
     display: block;
-  }
-  .active {
-    position: relative;
   }
   .active .header-content .menu-btn {
     z-index: 1000;
